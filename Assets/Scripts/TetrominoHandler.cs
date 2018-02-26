@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TetrominoHandler : MonoBehaviour {
+	[SerializeField]
+	private float fallSpeed = 1.0f;
+	private float fall = 0.0f;
 	private void Update()
 	{
+		UpdateTetromino();
 	InputKeyboardHandler();
 	}
 
+	private void UpdateTetromino(){
+		if(Time.time - fall >= fallSpeed){
+			Handler("Down");
+			fall = Time.time ;
+		}
+	}
 	private void InputKeyboardHandler()
 	{
 		if(Input.GetKeyDown(KeyCode.RightArrow)){

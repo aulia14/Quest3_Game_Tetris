@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GamePlayManager.cs" />
+     <Compile Include="Assets\Scripts\MoveScene.cs" />
      <Compile Include="Assets\Scripts\TetrominoHandler.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>F:/GitHub/Quest3_Game_Tetris/Quest3_Game_Tetris/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
